@@ -1,0 +1,22 @@
+¿Por qué tres modelos que recibieron el mismo texto dieron respuestas distintas? ¿Qué dice eso sobre confiar en una sola respuesta?:
+
+A consideración personal, creo que es porque están entrenados por distintas fuentes. Haciendo que generen una respuesta diferente a comparación de los otros agentes. Me parece una buena práctica comparar respuestas con diferentes IAs pero me preocupa un poco sobre el consumo de recursos que eso puede llevar. La IA no la usaría como una fuente confiable, pero si al menos para tomar una idea de alguna duda o tema que quiera conocer.
+
+
+| Punto Comparado | ChatGPT | Gemini | Deepseek |
+
+| --- | --- | --- | --- |
+
+| Tipo de IA que recomendó | IA agente | IA agente | IA agente |
+
+| Datos que dijo que se necesitan | Temas, materias, apuntes, libros, documentos, fuentes académicas confiables, preferencias de estudio. | Documentos de texto (pdfs, epubs), notas de clase, enlaces a páginas web académicas. | Apuntes, PDFs, Libros, páginas académicas, historial de búsquedas, calendarios, etiquetas. |
+
+| Riesgo ético que mencionó | La privacidad de los estudiantes al guardar datos sensibles de los estudiantes y evitar recomendar contenido protegido por derechos de autor de manera indebida. | Derechos de autor y propiedad intelectual y privacidad. | Exponer apuntes personales o material con derechos de autor. Se debe pedir consentimiento, cifrar datos, definir retención y no entrenar modelos con información privada sin autorización. |
+
+| Primer paso que propuso | Sin programar, realizaría un prototipo manual | Sin programar, realizaría un prototipo “no-code” con NotebookLM (producto de Google) | Sin programar, relizaria un inventario manual de fuentes y una encuesta breve de 5 a 10 estudiantes sobre sus búsquedas y donde pierden tiempo. Para luego realizar una hoja de cálculo. |
+
+| ¿Respetó la estructura de 4 puntos? (Si/No) | Si | Si | Si |
+
+| ¿Respetó el limite de 250 palabras? (Cuenta aproximada) | 221 | 218 | 182 |
+
+| Algo que dijo y tú que sabes que es incorrecto o dudoso | No eh encontrado discrepancias o errores en el texto. | No creo que haya errores o contenido dudoso | Tampoco tiene contenido dudoso o erróneo. |
