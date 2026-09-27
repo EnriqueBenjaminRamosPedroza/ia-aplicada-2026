@@ -1,0 +1,44 @@
+id,nombre,correo,telefono,fecha_acceso,hora_entrada,area,empresa,motivo
+1,Ana Torres,ana.torres@correo.com,1043321819,02/09/2026,06:00,Almacen,Diseno Beta,Soporte tecnico
+2,Luis Ramirez,luis.ramirez@correo.com,3890838637,26/09/2026,22:45,Oficinas,Soporte TI Gamma,Instalacion de equipo
+3,Maria Gonzalez,maria.gonzalez,5423511615,20/09/2026,14:00,Servidores,Constructora Alfa,Revision de rutina
+4,Pedro Lopez,pedro.lopez@correo.com,81 61 84 95 93,02/08/2026,13:30,Recepcion,Diseno Beta,Reunion
+5,Sofia Hernandez,sofia.hernandez@correo.com,3164752553,23/09/2026,08:15,Almacen,Soporte TI Gamma,Soporte tecnico
+6,Jorge Martinez,jorge.martinez@correo.com,2764835030,13/09/2026,14:00,Oficinas,Constructora Alfa,Soporte tecnico
+7,Laura Sanchez,laura.sanchez@correo.com,9537672423,24/09/2026,19:45,Servidores,Diseno Beta,Visita programada
+8,Carlos Diaz,carlos.diaz@correo.com,3287101226,13/08/2026,18:45,RECEPCION,Soporte TI Gamma,Auditoria
+9,Fernanda Ruiz,fernanda.ruiz@correo.com,8018451462,01/09/2026,14:15,Almacen,,Reunion
+10,Miguel Flores,miguel.flores@correo.com,4893252880,16/09/2026,06:00,Oficinas,Diseno Beta,Visita programada
+11,Paola Castro,PAOLA.CASTRO@CORREO.COM,4303911718,05/08/2026,21:15,Servidores,Soporte TI Gamma,Auditoria
+12,Ricardo Ortiz,ricardo.ortiz@correo.com,8963834657,04/09/2026,13:15,Recepcion,Constructora Alfa,Reunion
+13,Daniela Vargas,daniela.vargas@correo.com,5098393010,03/08/2026,07:30,Almacen,Diseno Beta,Reunion
+14,Andres Mora,andres.mora@correo.com,8347382997,26/08/2026,22:30,Oficinas,Soporte TI Gamma,Soporte tecnico
+15,Valeria Jimenez,valeria.jimenez@correo.com,1165667010,24/09/2026,16:00,Servidores,Constructora Alfa,Soporte tecnico
+16,Hugo Mendoza,hugo.mendoza@correo.com,3387262473,15/08/2026,09:00,Recepcion,Diseno Beta,Mantenimiento
+17,Gabriela Reyes,gabriela.reyes@correo.com,132677,01/09/2026,18:30,Almacen,Soporte TI Gamma,Revision de rutina
+18,Oscar Cruz,oscar.cruz@correo.com,4687234309,24/08/2026,16:00,Oficinas,Constructora Alfa,Mantenimiento
+19,Monica Guerrero,monica.guerrero@correo.com,9788208121,22/08/2026,13:45,servidores,Diseno Beta,Reunion
+20,Raul Navarro,raul.navarro@correo.com,9399091699,30/09/2026,14:15,Recepcion,Soporte TI Gamma,Visita programada
+21,Alejandra Silva,alejandra.silva@correo.com,3462475107,03/08/2026,12:30,Almacen,Constructora Alfa,Entrega de material
+22,Ivan Rojas,ivan.rojas@,5135427849,22/08/2026,15:00,Oficinas,Diseno Beta,Entrega de material
+23,Patricia Aguilar,patricia.aguilar@correo.com,4118244935,22/08/2026,14:45,Servidores,Soporte TI Gamma,Auditoria
+24,Sergio Delgado,sergio.delgado@correo.com,,18/09/2026,19:00,Recepcion,Constructora Alfa,Reunion
+25,Karla Pena,karla.pena@correo.com,1280598262,10/08/2026,17:00,Almacen,Diseno Beta,Visita programada
+26,Emilio Vega,emilio.vega@correo.com,3315869232,29/08/2026,23:45,Oficinas,Soporte TI Gamma,Entrega de material
+27,Rocio Campos,rocio.campos@correo.com,5634216073,27/08/2026,20:30,Servidores,Constructora Alfa,Auditoria
+28,Diego Salazar,diego.salazar@correo.com,3303654145,22/09/2026,16:00,Recepcion,Diseno Beta,Reunion
+29,Natalia Rios,natalia.rios@correo.com,429 401 9655,20/09/2026,09:45,Almacen,Soporte TI Gamma,Soporte tecnico
+30,Cesar Molina,cesar.molina@correo.com,4060883561,20/09/2026,16:00,Oficinas,Constructora Alfa,Auditoria
+31,Brenda Espinoza,brenda.espinoza@correo.com,8465648236,22/09/2026,11:30,sERVIDORES,Diseno Beta,Instalacion de equipo
+32,Fabian Cortes,fabian.cortes@correo.com,8044369957,15/09/2026,12:45,Recepcion,Soporte TI Gamma,Entrega de material
+33,Lorena Chavez,lorena.chavez@correo.com,1489513433,2026-13-32,07:15,Almacen,Constructora Alfa,Revision de rutina
+34,Arturo Gutierrez,arturo.gutierrez@correo.com,9176936763,21/08/2026,06:00,Oficinas,Diseno Beta,Instalacion de equipo
+35,Silvia Paredes,silvia.paredes@correo.com,3287083172,22/09/2026,16:45,Servidores,Soporte TI Gamma,Instalacion de equipo
+36,Marco Fuentes,marco.fuentes@correo.com,8727743487,09/08/2026,20:00,Recepcion,,Auditoria
+37,Adriana Nunez,adriana.nunez@correo.com,3455812236,23/08/2026,12:00,Almacen,Diseno Beta,Instalacion de equipo
+38,Gustavo Herrera,gustavo.herrera@correo.com,6587603669,28/08/2026,18:45,Oficinas,Soporte TI Gamma,Mantenimiento
+39,Claudia Soto,claudia.soto@correo.com,5466889373,14/09/2026,21:00,Servidores,Constructora Alfa,Instalacion de equipo
+40,Enrique Ibarra,enrique.ibarra@correo.com,5627298069,03/08/2026,19:15,Recepcion,Diseno Beta,Revision de rutina
+41,Sofia Hernandez,sofia.hernandez@correo.com,3164752553,23/09/2026,08:15,Almacen,Soporte TI Gamma,Soporte tecnico
+42,Raul Navarro,raul.navarro@correo.com,9399091699,30/09/2026,14:15,Recepcion,Soporte TI Gamma,Visita programada
+43,Ricardo Ortiz,ricardo.ortiz@correo.com,8963834657,04/09/2026,13:15,RECEPCION,Constructora Alfa,Reunion

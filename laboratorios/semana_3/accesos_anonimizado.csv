@@ -1,0 +1,41 @@
+id,id_persona,semana,franja,area,tipo_empresa,motivo
+1,P001,36,Manana,Almacen,Diseno,Soporte tecnico
+2,P002,39,Noche,Oficinas,Soporte TI,Instalacion de equipo
+3,P003,39,Tarde,Servidores,Constructora,Revision de rutina
+4,P004,32,Tarde,Recepcion,Diseno,Reunion
+5,P005,39,Manana,Almacen,Soporte TI,Soporte tecnico
+6,P006,38,Tarde,Oficinas,Constructora,Soporte tecnico
+7,P007,39,Noche,Servidores,Diseno,Visita programada
+8,P008,33,Tarde,Recepcion,Soporte TI,Auditoria
+9,P009,36,Tarde,Almacen,,Reunion
+10,P010,38,Manana,Oficinas,Diseno,Visita programada
+11,P011,32,Noche,Servidores,Soporte TI,Auditoria
+12,P012,36,Tarde,Recepcion,Constructora,Reunion
+13,P013,32,Manana,Almacen,Diseno,Reunion
+14,P014,35,Noche,Oficinas,Soporte TI,Soporte tecnico
+15,P015,39,Tarde,Servidores,Constructora,Soporte tecnico
+16,P016,33,Manana,Recepcion,Diseno,Mantenimiento
+17,P017,36,Tarde,Almacen,Soporte TI,Revision de rutina
+18,P018,35,Tarde,Oficinas,Constructora,Mantenimiento
+19,P019,34,Tarde,Servidores,Diseno,Reunion
+20,P020,40,Tarde,Recepcion,Soporte TI,Visita programada
+21,P021,32,Tarde,Almacen,Constructora,Entrega de material
+22,P022,34,Tarde,Oficinas,Diseno,Entrega de material
+23,P023,34,Tarde,Servidores,Soporte TI,Auditoria
+24,P024,38,Noche,Recepcion,Constructora,Reunion
+25,P025,33,Tarde,Almacen,Diseno,Visita programada
+26,P026,35,Noche,Oficinas,Soporte TI,Entrega de material
+27,P027,35,Noche,Servidores,Constructora,Auditoria
+28,P028,39,Tarde,Recepcion,Diseno,Reunion
+29,P029,39,Manana,Almacen,Soporte TI,Soporte tecnico
+30,P030,39,Tarde,Oficinas,Constructora,Auditoria
+31,P031,39,Manana,Servidores,Diseno,Instalacion de equipo
+32,P032,38,Tarde,Recepcion,Soporte TI,Entrega de material
+33,P033,,Manana,Almacen,Constructora,Revision de rutina
+34,P034,34,Manana,Oficinas,Diseno,Instalacion de equipo
+35,P035,39,Tarde,Servidores,Soporte TI,Instalacion de equipo
+36,P036,33,Noche,Recepcion,,Auditoria
+37,P037,35,Tarde,Almacen,Diseno,Instalacion de equipo
+38,P038,35,Tarde,Oficinas,Soporte TI,Mantenimiento
+39,P039,38,Noche,Servidores,Constructora,Instalacion de equipo
+40,P040,32,Noche,Recepcion,Diseno,Revision de rutina
