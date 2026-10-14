@@ -1,0 +1,81 @@
+Proyecto Centinela: Sistema de Inteligencia Artificial para la Detección Temprana de Cáncer
+
+1. Introducción y justificación
+
+El cáncer es una de las principales causas de muerte en el mundo, y su pronóstico depende en gran medida del momento en que se detecta. Cuando la enfermedad se identifica en una etapa temprana, los tratamientos suelen ser menos agresivos, más económicos y con mayores probabilidades de éxito. Sin embargo, en muchas regiones el acceso a especialistas es limitado, los estudios de imagen tardan semanas en ser interpretados y la carga de trabajo del personal médico es muy alta. Esta combinación provoca diagnósticos tardíos que podrían evitarse.
+
+El Proyecto Centinela propone el desarrollo de un sistema de inteligencia artificial que funcione como apoyo para los profesionales de la salud en la detección temprana de cáncer a partir de imágenes médicas. El sistema no pretende reemplazar al médico ni emitir diagnósticos definitivos. Su objetivo es señalar estudios sospechosos, priorizar los casos más urgentes y ofrecer una segunda lectura que ayude a reducir errores y tiempos de espera.
+
+La necesidad de este proyecto se fundamenta en tres observaciones. Primero, los modelos de aprendizaje profundo han demostrado un desempeño competitivo en tareas de clasificación de imágenes médicas, siempre que se entrenen con datos de calidad. Segundo, la digitalización de los servicios de radiología y patología ha generado grandes volúmenes de imágenes que pueden aprovecharse. Tercero, las instituciones de salud pública requieren herramientas de bajo costo que puedan operar incluso en clínicas con recursos limitados.
+
+2. Objetivos del proyecto
+
+El objetivo general es diseñar, entrenar y validar un prototipo de sistema de inteligencia artificial capaz de identificar signos tempranos de cáncer en imágenes médicas, con un nivel de sensibilidad suficiente para ser útil como herramienta de apoyo clínico.
+
+Los objetivos específicos son los siguientes. Reunir y organizar un conjunto de datos de imágenes médicas anonimizadas y debidamente autorizadas. Entrenar modelos de clasificación y segmentación que distingan entre tejido normal y tejido sospechoso. Evaluar el desempeño del sistema con métricas apropiadas, como sensibilidad, especificidad y área bajo la curva. Diseñar una interfaz sencilla que permita a un médico revisar los resultados y las zonas señaladas por el modelo. Documentar las limitaciones, los riesgos y las medidas de supervisión humana necesarias para un uso responsable.
+
+Además, el proyecto busca generar un informe de transparencia que explique en lenguaje claro cómo funciona el sistema, con qué datos se entrenó y en qué situaciones no debe utilizarse. Esta documentación es esencial para que los profesionales de la salud confíen en la herramienta de manera informada y no de forma ciega.
+
+3. Descripción de los datos
+
+Los modelos de inteligencia artificial aprenden de los datos, por lo que la calidad del conjunto de entrenamiento determina en buena parte la calidad del sistema final. Para el prototipo se contempla trabajar con imágenes de mastografía, radiografías de tórax y cortes de tomografía computarizada, además de láminas digitalizadas de patología. Cada imagen debe acompañarse de una etiqueta confirmada por al menos dos especialistas, de modo que el modelo aprenda de diagnósticos confiables.
+
+Un punto crítico es la privacidad. Las imágenes médicas pertenecen a personas reales y contienen información sensible. Por esa razón, todos los archivos deben pasar por un proceso de anonimización que elimine nombres, fechas de nacimiento, números de expediente y cualquier metadato que permita identificar a un paciente. Además, el uso de los datos requiere el consentimiento informado de los participantes o la autorización de un comité de ética, según corresponda.
+
+Otro aspecto importante es la representatividad. Si el conjunto de datos incluye principalmente imágenes de un grupo de población, un tipo de equipo o una sola institución, el modelo podría funcionar peor con pacientes o equipos distintos. Este problema se conoce como sesgo de los datos y puede producir diferencias injustas en la calidad de la atención. Para reducirlo, se buscará reunir imágenes de distintas edades, regiones y modelos de equipos, y se medirá el desempeño por separado en cada subgrupo.
+
+También se debe considerar el desbalance de clases. En la práctica, la mayoría de los estudios corresponden a personas sanas, y los casos con cáncer son una minoría. Si no se corrige este desequilibrio, el modelo puede aprender a responder siempre que no hay enfermedad y aun así parecer muy preciso. Para evitarlo se utilizarán técnicas como el remuestreo, la ponderación de las clases y el aumento de datos mediante rotaciones, recortes y cambios de brillo controlados.
+
+4. Metodología técnica
+
+El desarrollo se dividirá en cinco etapas. En la primera, la preparación de datos, se limpiarán las imágenes, se normalizarán sus tamaños y se dividirán en tres grupos: entrenamiento, validación y prueba. La división se hará por paciente y no por imagen, para evitar que fotografías del mismo caso aparezcan en grupos distintos y den una falsa impresión de buen desempeño.
+
+En la segunda etapa, el entrenamiento, se emplearán redes neuronales convolucionales, que son especialmente eficaces para analizar imágenes. Se partirá de modelos preentrenados en conjuntos de imágenes generales y se ajustarán con los datos médicos mediante una técnica llamada aprendizaje por transferencia. Este enfoque reduce el tiempo de entrenamiento y permite obtener buenos resultados incluso con conjuntos de datos moderados.
+
+En la tercera etapa, la evaluación, se medirá el desempeño con el conjunto de prueba, que el modelo nunca ha visto. Se prestará especial atención a la sensibilidad, es decir, a la proporción de casos reales de cáncer que el sistema logra detectar, porque un falso negativo puede retrasar un tratamiento vital. También se medirá la especificidad, que indica qué tan bien el sistema reconoce los casos sanos, ya que demasiados falsos positivos generan ansiedad, estudios innecesarios y costos adicionales.
+
+En la cuarta etapa, la explicabilidad, se utilizarán mapas de calor que muestren qué regiones de la imagen influyeron más en la decisión del modelo. Esto permite al médico comprobar si el sistema está observando una zona clínicamente relevante o si se está guiando por elementos irrelevantes, como marcas del equipo o anotaciones en la imagen. En la quinta etapa, la integración, se desarrollará una interfaz web que muestre la imagen original, la zona señalada y un nivel de confianza expresado de manera comprensible.
+
+5. Uso de modelos de lenguaje en el proyecto
+
+Además del análisis de imágenes, el equipo evalúa incorporar un modelo de lenguaje de gran tamaño para tareas de apoyo basadas en texto. Entre los usos contemplados se encuentran la redacción de borradores de informes a partir de los hallazgos del sistema, la consulta de guías clínicas y protocolos internos, y la generación de explicaciones sencillas para los pacientes. Estas funciones requieren que el modelo lea documentos extensos, por lo que es importante conocer el tamaño de su ventana de contexto.
+
+La ventana de contexto es la cantidad máxima de texto, medida en tokens, que el modelo puede considerar en una sola consulta. Si un documento excede ese límite, el modelo puede perder información, ignorar partes del texto o responder con datos que no aparecen en él. En un entorno médico esto es especialmente delicado, porque una respuesta inventada sobre una dosis, un criterio de diagnóstico o un protocolo podría tener consecuencias graves.
+
+Por ello, el proyecto establece que toda respuesta generada por un modelo de lenguaje debe incluir una cita textual del documento fuente y debe ser revisada por una persona calificada antes de utilizarse. Asimismo, se evaluará la temperatura del modelo. Para tareas que exigen precisión, como resumir un protocolo clínico, se utilizarán valores bajos que produzcan respuestas consistentes. Para tareas de comunicación, como proponer distintas formas de explicar un resultado a un paciente, se podrán utilizar valores un poco más altos, siempre con revisión humana.
+
+El código de verificación interno de este documento es AZUL-7342.
+
+6. Riesgos éticos y limitaciones
+
+Todo sistema de inteligencia artificial en el ámbito de la salud implica riesgos que deben reconocerse desde el inicio. El primero es el exceso de confianza. Si los profesionales empiezan a aceptar las sugerencias del sistema sin revisarlas, los errores del modelo pasarán desapercibidos. Para mitigar este riesgo, la interfaz mostrará siempre la incertidumbre del resultado y recordará que la decisión final corresponde al médico.
+
+El segundo riesgo es la desigualdad. Un modelo entrenado con datos poco representativos puede funcionar peor con ciertos grupos de pacientes, lo que ampliaría las brechas existentes en la atención médica. El tercer riesgo es la privacidad, ya que una filtración de imágenes médicas puede causar daños personales, laborales y sociales. Por eso se aplicarán cifrado, control de accesos y registros de auditoría en todo el flujo de trabajo.
+
+El cuarto riesgo es el cambio en las condiciones de uso. Un modelo que funciona bien en un hospital puede degradarse cuando se instala en otro con equipos distintos o poblaciones diferentes. Para detectar este fenómeno, conocido como desviación de los datos, se monitoreará el desempeño de manera continua y se recalibrará el sistema cuando sea necesario.
+
+Finalmente, es indispensable aclarar las limitaciones. El sistema no sustituye una biopsia ni una valoración clínica completa. Tampoco está diseñado para detectar todos los tipos de cáncer, y su desempeño se ha evaluado únicamente en las condiciones descritas en este documento. Cualquier uso fuera de ese alcance debe ser validado previamente por un comité de expertos.
+
+7. Plan de trabajo y cronograma
+
+El proyecto se desarrollará en un periodo estimado de doce meses. Durante los primeros dos meses se definirán los requisitos clínicos, se solicitarán las autorizaciones éticas y se establecerán los convenios para obtener los datos. Entre el tercer y el cuarto mes se realizará la anonimización, la limpieza y el etiquetado de las imágenes, con la participación de médicos especialistas.
+
+Del quinto al octavo mes se entrenarán y compararán distintos modelos, se ajustarán sus parámetros y se analizará su desempeño por subgrupos de población. En el noveno y décimo mes se construirá la interfaz y se realizarán pruebas de usabilidad con profesionales de la salud, quienes aportarán observaciones para mejorar la presentación de resultados.
+
+Los últimos dos meses se dedicarán a una evaluación piloto en condiciones controladas, a la redacción del informe de transparencia y a la preparación de un plan de monitoreo posterior a la implementación. Al terminar cada etapa se realizará una revisión con el comité de ética y con el equipo clínico para decidir si el proyecto puede avanzar a la siguiente fase.
+
+8. Recursos necesarios
+
+Para llevar a cabo el proyecto se requiere un equipo multidisciplinario. Se necesitan especialistas en radiología y patología para etiquetar y validar los datos, ingenieros de aprendizaje automático para desarrollar los modelos, expertos en seguridad informática para proteger la información y especialistas en ética y derecho sanitario para supervisar el cumplimiento de las normas aplicables.
+
+En cuanto a infraestructura, se requiere almacenamiento seguro para grandes volúmenes de imágenes, equipos con tarjetas gráficas para el entrenamiento de los modelos y un entorno de pruebas aislado de la red hospitalaria. También se contempla un presupuesto para capacitar al personal que utilizará el sistema, porque una herramienta bien diseñada pierde valor si quienes la usan no comprenden sus alcances y sus límites.
+
+9. Indicadores de éxito
+
+El éxito del proyecto no se medirá únicamente por la precisión del modelo. Se considerarán indicadores técnicos, como una sensibilidad mínima acordada con el equipo clínico, una especificidad aceptable y un desempeño estable entre subgrupos. También se considerarán indicadores operativos, como la reducción del tiempo entre la toma del estudio y su interpretación, y la satisfacción de los profesionales que utilicen la herramienta.
+
+Por último, se establecerán indicadores de responsabilidad: el número de casos en los que el médico corrigió al sistema, la cantidad de alertas revisadas por una persona y la ausencia de incidentes de privacidad. Estos indicadores permitirán saber si el sistema realmente mejora la atención o si, por el contrario, introduce nuevos problemas que deben corregirse antes de ampliar su uso.
+
+10. Conclusión
+
+El Proyecto Centinela busca aprovechar la inteligencia artificial para apoyar la detección temprana del cáncer, siempre bajo la supervisión de profesionales de la salud. Su éxito dependerá de la calidad y representatividad de los datos, de una evaluación rigurosa, de la transparencia sobre sus limitaciones y de un compromiso firme con la privacidad y la equidad. La tecnología puede ayudar a salvar vidas, pero solo si se utiliza con cuidado, con evidencia y con responsabilidad.
