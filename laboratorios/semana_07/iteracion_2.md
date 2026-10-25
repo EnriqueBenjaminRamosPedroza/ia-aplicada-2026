@@ -1,4 +1,4 @@
-# Iteración 0: Rol + Contexto
+# Iteración 2: Rol + Contexto
 
 **Modelo:** ChatGPT ver. GPT-6
 **Fecha:** 24 de octubre del 2026
@@ -8,7 +8,7 @@ Eres analista de seguridad de primer nivel en un centro de operaciones. Tu lecto
 
 Contexto: este texto proviene de un formulario que llenan usuarios sin conocimientos técnicos. Los tipos de incidente posibles son: acceso no autorizado, phishing, malware, pérdida de dispositivo, otro. Las severidades posibles son: baja, media, alta.
 
-Clasifica este reporte de incidente:[entrada]
+Clasifica este reporte de incidente: [entrada]
 
 ## Respuesta a Entrada 1
 Clasificación del incidente
