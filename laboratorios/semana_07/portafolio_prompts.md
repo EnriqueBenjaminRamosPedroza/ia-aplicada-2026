@@ -1,5 +1,3 @@
----
-
 ## Semana 7: Clasificación de incidentes con mejora iterativa
 
 **Fecha:** 25 de octubre de 2026
